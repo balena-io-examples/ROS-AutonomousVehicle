@@ -1,0 +1,16 @@
+version: '2.1'
+volumes:
+    data: {}
+services:
+    prius:
+        build:
+            context: prius
+            dockerfile: Dockerfile
+        environment:
+            - UDEV=1
+        privileged: true
+        network_mode: host
+        volumes:
+            - "data:/app/data"
+        devices:
+            - "/dev:/dev"

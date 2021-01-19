@@ -1,0 +1,6 @@
+# Disable display power management
+xset s off
+xset s noblank
+
+/bin/bash -c "source /opt/ros/kinetic/setup.bash"
+/bin/bash -c "source /tmp/workspace/devel/setup.bash && roslaunch car_demo demo.launch"
