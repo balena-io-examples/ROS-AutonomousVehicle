@@ -3,7 +3,7 @@
 # Run balena base image entrypoint script
 /usr/bin/entry.sh echo "Running balena base image entrypoint..."
 HOSTNAME=$(cat /etc/hostname)
-echo "127.0.1.1 $HOSTNAME" >> /etc/hosts
+echo "127.0.0.1 $HOSTNAME" >> /etc/hosts
 export DBUS_SYSTEM_BUS_ADDRESS=unix:path=/host/run/dbus/system_bus_socket
 
 sed -i -e 's/console/anybody/g' /etc/X11/Xwrapper.config

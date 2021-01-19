@@ -38,7 +38,6 @@ RUN echo "deb http://packages.osrfoundation.org/gazebo/ubuntu `lsb_release -cs` 
     ros-kinetic-joy \
  && apt-get clean
 
-
 RUN mkdir -p /tmp/workspace/src
 COPY prius_description /tmp/workspace/src/prius_description
 COPY prius_msgs /tmp/workspace/src/prius_msgs
@@ -60,7 +59,6 @@ COPY ./autostart /home/prius/.config/openbox/autostart
 COPY ./rc.xml /home/prius/.config/openbox/rc.xml
 RUN mkdir '/home/prius/.config/ROS Desktop'
 RUN chown -R prius:prius /home/prius
-#RUN ln -s /data/scratch /home/scratch/projects
 
 COPY ./menu.xml /var/lib/openbox/debian-menu.xml
 
@@ -68,6 +66,5 @@ COPY ./menu.xml /var/lib/openbox/debian-menu.xml
 RUN echo 'SUBSYSTEM=="vchiq",GROUP="video",MODE="0660"' > /etc/udev/rules.d/10-vchiq-permissions.rules
 RUN usermod -a -G audio,video,tty prius
 
-#CMD ["/bin/bash", "-c", "source /opt/ros/kinetic/setup.bash && source /tmp/workspace/devel/setup.bash && roslaunch car_demo demo.launch"]
 ENTRYPOINT ["bash", "/start.sh"]
 CMD ["export DISPLAY=:0"]
