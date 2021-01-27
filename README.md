@@ -20,7 +20,9 @@ However, ever easier than that, is to just click this button:
 
 [![balena deploy button](https://www.balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/balenalabs-incubator/ROS-AutonomousVehicle)
 
-Once the applications starts up, you can use the `W` `A` `S` and `D` keys to drive the Prius, and the mouse can manipulate the viewing angle.
+The container will begin building in balenaCloud, installing all of the packages defined in the Dockerfile.  Once your device is provisioned and connected to balenaCloud, the container will download onto the device (a NUC or similar in this case) and the application will start up.  After everything is launched and the virtual world starts up, you may need to rearrange windows to see that there are two applications running.  You can use the `W` `A` `S` and `D` keys to drive the Prius, and the mouse can manipulate the viewing angle.  
+
+The usage of RVIZ and Gazebo is beyond the scope of this documentation, so, you may need to consult the official websites for those projects for usage and options.  The goal of this repo, is to just do the containerization and make it easy to deploy on balena.
 
 ## Additional Info
 
@@ -31,4 +33,4 @@ Further reading on ROS can found on their website, specifically:
  - https://index.ros.org/
  - https://www.ros.org/
  
-One last note, when this repo finishes deploying and the virtual world starts up, is that you may need to rearrange windows to see that there are two applications running.  Both Gazebo and RVIZ are used to simulate the world.  The usage of these applications is beyond the scope of this documentation, so, you may need to consult the official documentation for those projects for usage and options.  The goal of this repo, is to just do the containerization and make it easy to deploy on balena.
+
