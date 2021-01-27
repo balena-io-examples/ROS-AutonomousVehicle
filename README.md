@@ -20,6 +20,8 @@ However, ever easier than that, is to just click this button:
 
 [![balena deploy button](https://www.balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/balenalabs-incubator/ROS-AutonomousVehicle)
 
+Once the applications starts up, you can use the `W` `A` `S` and `D` keys to drive the Prius, and the mouse can manipulate the viewing angle.
+
 ## Additional Info
 
 More information is available in the ReadMe in the `prius` directory, have a look there for added info provided by the OSRF.
