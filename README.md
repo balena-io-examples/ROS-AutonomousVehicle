@@ -4,7 +4,7 @@ The [Robot Operating System](https://www.ros.org/), or ROS as it is commonly kno
 
 This particular demo highlights the features and capabilities of ROS to build and test autonomous vehicles, showing functions such as cameras and LIDAR, in a simulated environment.  ROS uses a framework of topics and messages, in a publisher and subscriber model.  All of that can be done programmatically without any displays, input, or other real “interaction” with the robot or device.  But, for learning purpose, it can be helpful to visualize what is occurring, which is the aim of this project.
 
-###Requirements
+## Requirements
  - x86-powered device, like an Intel NUC or similar "PC-like" hardware.  It will not run on a Raspberry Pi, Nvidia Jetson, or other Arm-powered devices.
  - 4gb RAM
 
