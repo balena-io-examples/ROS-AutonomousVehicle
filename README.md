@@ -12,11 +12,15 @@ This particular demo highlights the features and capabilities of ROS to build an
 
 This demo was built by the [Open Source Robotics Foundation](https://www.openrobotics.org/), all credit is due to them for the construction of this application.  We simply placed it into a balena container to make it easy to deploy and begin learning from and experimenting with.
 
+## Getting Started
+
 To get started, do a `git clone` of this repo, and then a `balena push YourApplicationNameHere`.  You can read about the process more here:  https://www.balena.io/docs/learn/deploy/deployment/
 
 However, ever easier than that, is to just click this button:
 
 [![balena deploy button](https://www.balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/balenalabs-incubator/ROS-AutonomousVehicle)
+
+## Additional Info
 
 More information is available in the ReadMe in the `prius` directory, have a look there for added info provided by the OSRF.
 
