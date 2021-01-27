@@ -4,6 +4,10 @@ The [Robot Operating System](https://www.ros.org/), or ROS as it is commonly kno
 
 This particular demo highlights the features and capabilities of ROS to build and test autonomous vehicles, showing functions such as cameras and LIDAR, in a simulated environment.  ROS uses a framework of topics and messages, in a publisher and subscriber model.  All of that can be done programmatically without any displays, input, or other real “interaction” with the robot or device.  But, for learning purpose, it can be helpful to visualize what is occurring, which is the aim of this project.
 
+###Requirements
+ - x86-powered device, like an Intel NUC or similar "PC-like" hardware.  It will not run on a Raspberry Pi, Nvidia Jetson, or other Arm-powered devices.
+ - 4gb RAM
+
 ![Prius Image](https://www.osrfoundation.org/wordpress2/wp-content/uploads/2017/06/prius_roundabout_exit.png)
 
 This demo was built by the [Open Source Robotics Foundation](https://www.openrobotics.org/), all credit is due to them for the construction of this application.  We simply placed it into a balena container to make it easy to deploy and begin learning from and experimenting with.
@@ -13,8 +17,6 @@ To get started, do a `git clone` of this repo, and then a `balena push YourAppli
 However, ever easier than that, is to just click this button:
 
 [![balena deploy button](https://www.balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/balenalabs-incubator/ROS-AutonomousVehicle)
-
-This repo does require the use of an x86-powered device such as an Intel NUC or similar form-factor “PC”-like device.  It will not run on a Raspberry Pi, Nvidia Jetson, or other Arm-powered devices.
 
 More information is available in the ReadMe in the `prius` directory, have a look there for added info provided by the OSRF.
 
