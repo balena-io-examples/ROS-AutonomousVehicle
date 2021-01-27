@@ -10,16 +10,6 @@ A video and screenshots of the demo can be seen in this blog post: https://www.o
 
 ![Prius Image](https://www.osrfoundation.org/wordpress2/wp-content/uploads/2017/06/prius_roundabout_exit.png)
 
-# Requirements
-
-This demo has been tested on Ubuntu Xenial (16.04)
-
-* An X server
-* [Docker](https://www.docker.com/get-docker)
-* [nvidia-docker2](https://github.com/nvidia/nvidia-docker/wiki/Installation-(version-2.0))
-* The current user is a member of the docker group or other group with docker execution rights.
-* [rocker](https://github.com/osrf/rocker)
-
 # Recommended
 
 * A joystick
@@ -27,27 +17,13 @@ This demo has been tested on Ubuntu Xenial (16.04)
 
 This has been tested with the Logitech F710 in Xbox mode. If you have a different joystick you may need to adjust the parameters for the very basic joystick_translator node: https://github.com/osrf/car_demo/blob/master/car_demo/nodes/joystick_translator
 
-# Building
-
-First clone the repo, then run the script `build_demo.bash`.
-It builds a docker image with the local source code inside.
-
-```
-$ cd car_demo
-$ ./build_demo.bash
-```
-
 # Running
 
 Connect a game controller to your PC.
-Use the script `run_demo.bash` to run the demo.
 
-```
-$ ./run_demo.bash
-```
-An [RVIZ](http://wiki.ros.org/rviz) window will open showing the car and sensor output.
-A gazebo window will appear showing the simulation.
-Either use the controller to drive the prius around the world, or click on the gazebo window and use the `WASD` keys to drive the car.
+An [RVIZ](http://wiki.ros.org/rviz) window will open showing the car and sensor output, and, a gazebo window will appear showing the simulation.
+
+Either use the controller to drive the prius around the world, or click on the gazebo window and use the `W` `A` `S` and `D` keys to drive the car.
 
 If using a Logitech F710 controller:
 
