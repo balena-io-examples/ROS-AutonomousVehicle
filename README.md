@@ -7,6 +7,7 @@ This particular demo highlights the features and capabilities of ROS to build an
 ## Requirements
  - x86-powered device, like an Intel NUC or similar "PC-like" hardware.  It will not run on a Raspberry Pi, Nvidia Jetson, or other Arm-powered devices.
  - 4gb RAM
+ - Monitor, Keyboard, Mouse
 
 ![Prius Image](https://www.osrfoundation.org/wordpress2/wp-content/uploads/2017/06/prius_roundabout_exit.png)
 
