@@ -9,6 +9,7 @@ This particular demo highlights the features and capabilities of ROS to build an
  - 4gb RAM
  - Monitor, Keyboard, Mouse
 
+![Simulator Image](https://github.com/balena-io-examples/ROS-AutonomousVehicle/blob/main/simulator.png)
 ![Prius Image](https://www.osrfoundation.org/wordpress2/wp-content/uploads/2017/06/prius_roundabout_exit.png)
 
 This demo was built by the [Open Source Robotics Foundation](https://www.openrobotics.org/), all credit is due to them for the construction of this application.  We simply placed it into a balena container to make it easy to deploy and begin learning from and experimenting with.
